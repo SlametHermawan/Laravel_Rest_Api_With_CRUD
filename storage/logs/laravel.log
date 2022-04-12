@@ -1,0 +1,339 @@
+[2022-04-12 04:45:31] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'rest-api-dengan-crud' (SQL: select * from information_schema.tables where table_schema = rest-api-dengan-crud and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'rest-api-dengan-crud' (SQL: select * from information_schema.tables where table_schema = rest-api-dengan-crud and table_name = migrations and table_type = 'BASE TABLE') at D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:712)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(673): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(106): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(606): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#15 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#17 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(1015): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 D:\\projects\est-api-dengan-crud\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 {main}
+
+[previous exception] [object] (PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'rest-api-dengan-crud' at D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1064): call_user_func(Object(Closure))
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1100): Illuminate\\Database\\Connection->getPdo()
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(442): Illuminate\\Database\\Connection->getReadPdo()
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(368): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(376): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(673): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(106): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(77): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(606): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#19 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#25 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(1015): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\projects\est-api-dengan-crud\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 {main}
+"} 
+[2022-04-12 04:49:04] local.ERROR: Method Illuminate\Database\Schema\Blueprint::data does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::data does not exist. at D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Macroable\\Traits\\Macroable.php:113)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\database\\migrations\\2022_04_12_043442_create_products_table.php(21): Illuminate\\Database\\Schema\\Blueprint->__call('data', Array)
+#1 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(226): CreateProductsTable->{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(263): Illuminate\\Database\\Schema\\Builder->Illuminate\\Database\\Schema\\{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(227): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Database\\Schema\\Builder->create('products', Object(Closure))
+#5 D:\\projects\est-api-dengan-crud\\database\\migrations\\2022_04_12_043442_create_products_table.php(23): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(472): CreateProductsTable->up()
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(394): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\MySqlConnection), Object(CreateProductsTable), 'up')
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(403): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(202): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateProductsTable), 'up')
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(167): Illuminate\\Database\\Migrations\\Migrator->runUp('D:\\\\projects\\\es...', 1, false)
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(112): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(85): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(606): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#15 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#21 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Command\\Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(1015): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 D:\\projects\est-api-dengan-crud\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 D:\\projects\est-api-dengan-crud\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+"} 
+[2022-04-12 18:07:19] local.ERROR: Class 'App\Http\Controllers\validator' not found {"exception":"[object] (Error(code: 0): Class 'App\\Http\\Controllers\\validator' not found at D:\\projects\est-api-dengan-crud\\app\\Http\\Controllers\\ProductController.php:11)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ProductController->store(Object(Illuminate\\Http\\Request))
+#1 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#2 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ProductController), 'store')
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#4 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Route->run()
+#5 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(723): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#15 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#17 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#18 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\projects\est-api-dengan-crud\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 D:\\projects\est-api-dengan-crud\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 D:\\projects\est-api-dengan-crud\\server.php(21): require_once('D:\\\\projects\\\es...')
+#38 {main}
+"} 
+[2022-04-12 18:11:58] local.ERROR: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'public' (T_PUBLIC), expecting end of file at D:\\projects\est-api-dengan-crud\\app\\Http\\Controllers\\ProductController.php:80)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\projects\\\es...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\\\Http\\\\Contro...')
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(877): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#4 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#5 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(851): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(694): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(836): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(276): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\projects\est-api-dengan-crud\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#35 D:\\projects\est-api-dengan-crud\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#36 D:\\projects\est-api-dengan-crud\\server.php(21): require_once('D:\\\\projects\\\es...')
+#37 {main}
+"} 
+[2022-04-12 18:14:09] local.ERROR: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'public' (T_PUBLIC), expecting end of file at D:\\projects\est-api-dengan-crud\\app\\Http\\Controllers\\ProductController.php:80)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\projects\\\es...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\\\Http\\\\Contro...')
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(877): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#4 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(758): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#5 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(851): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array, true)
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(694): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Contro...', Array)
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(836): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(276): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#15 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#17 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\projects\est-api-dengan-crud\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#35 D:\\projects\est-api-dengan-crud\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#36 D:\\projects\est-api-dengan-crud\\server.php(21): require_once('D:\\\\projects\\\es...')
+#37 {main}
+"} 
+[2022-04-12 18:18:50] local.ERROR: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'product_type' at row 1 (SQL: insert into `products` (`product_name`, `product_type`, `product_price`, `expired_at`, `updated_at`, `created_at`) values (Chitato Rasa Ayam Panggang, snack, 100000, 2022-12-01, 2022-04-12 18:18:50, 2022-04-12 18:18:50)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 01000): SQLSTATE[01000]: Warning: 1265 Data truncated for column 'product_type' at row 1 (SQL: insert into `products` (`product_name`, `product_type`, `product_price`, `expired_at`, `updated_at`, `created_at`) values (Chitato Rasa Ayam Panggang, snack, 100000, 2022-12-01, 2022-04-12 18:18:50, 2022-04-12 18:18:50)) at D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:712)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('insert into `pr...', Array, Object(Closure))
+#1 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(502): Illuminate\\Database\\Connection->run('insert into `pr...', Array, Object(Closure))
+#2 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(454): Illuminate\\Database\\Connection->statement('insert into `pr...', Array)
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `pr...', Array)
+#4 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3028): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `pr...', Array, 'id')
+#5 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1657): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1188): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1153): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(994): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(896): Illuminate\\Database\\Eloquent\\Model->save()
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(263): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\Product))
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(897): tap(Object(App\\Models\\Product), Object(Closure))
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2132): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2144): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#15 D:\\projects\est-api-dengan-crud\\app\\Http\\Controllers\\ProductController.php(28): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ProductController->store(Object(Illuminate\\Http\\Request))
+#17 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ProductController), 'store')
+#19 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Route->run()
+#21 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#26 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#27 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#28 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(723): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\projects\est-api-dengan-crud\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 D:\\projects\est-api-dengan-crud\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 D:\\projects\est-api-dengan-crud\\server.php(21): require_once('D:\\\\projects\\\es...')
+#54 {main}
+
+[previous exception] [object] (PDOException(code: 01000): SQLSTATE[01000]: Warning: 1265 Data truncated for column 'product_type' at row 1 at D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:501)
+[stacktrace]
+#0 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(501): PDOStatement->execute()
+#1 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('insert into `pr...', Array)
+#2 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('insert into `pr...', Array, Object(Closure))
+#3 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(502): Illuminate\\Database\\Connection->run('insert into `pr...', Array, Object(Closure))
+#4 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(454): Illuminate\\Database\\Connection->statement('insert into `pr...', Array)
+#5 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `pr...', Array)
+#6 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3028): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `pr...', Array, 'id')
+#7 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1657): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#8 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1188): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#9 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1153): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#10 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(994): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#11 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(896): Illuminate\\Database\\Eloquent\\Model->save()
+#12 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(263): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\Product))
+#13 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(897): tap(Object(App\\Models\\Product), Object(Closure))
+#14 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#15 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2132): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#16 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2144): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#17 D:\\projects\est-api-dengan-crud\\app\\Http\\Controllers\\ProductController.php(28): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#18 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ProductController->store(Object(Illuminate\\Http\\Request))
+#19 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#20 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ProductController), 'store')
+#21 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#22 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Route->run()
+#23 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#28 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#29 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#30 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(723): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#33 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#34 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#35 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#36 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\projects\est-api-dengan-crud\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\projects\est-api-dengan-crud\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\projects\est-api-dengan-crud\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\projects\est-api-dengan-crud\\server.php(21): require_once('D:\\\\projects\\\es...')
+#56 {main}
+"} 
